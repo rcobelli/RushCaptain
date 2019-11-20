@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06110809CEEB57F15546B53B /* Pods_Rush_Captain_Rush_CaptainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE45D7C942391AAB5B900ADA /* Pods_Rush_Captain_Rush_CaptainUITests.framework */; };
+		9405DA7C2385AF64009EC628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA7B2385AF64009EC628 /* AppDelegate.swift */; };
+		9405DA802385AF64009EC628 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA7F2385AF64009EC628 /* ViewController.swift */; };
+		9405DA832385AF64009EC628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9405DA812385AF64009EC628 /* Main.storyboard */; };
+		9405DA852385AF68009EC628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9405DA842385AF68009EC628 /* Assets.xcassets */; };
+		9405DA882385AF68009EC628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9405DA862385AF68009EC628 /* LaunchScreen.storyboard */; };
+		9405DA932385AF68009EC628 /* Rush_CaptainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA922385AF68009EC628 /* Rush_CaptainUITests.swift */; };
+		9405DA9E2385B006009EC628 /* TimerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA9D2385B006009EC628 /* TimerTableViewCell.swift */; };
+		9405DAA02385B356009EC628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA9F2385B356009EC628 /* SceneDelegate.swift */; };
+		944378CF238602EB006649D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 944378CE238602EB006649D7 /* Settings.bundle */; };
+		A75605AB06B66C7A8A05C796 /* Pods_Rush_Captain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4940497F973C37300A45970D /* Pods_Rush_Captain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9405DA8F2385AF68009EC628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9405DA702385AF63009EC628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9405DA772385AF63009EC628;
+			remoteInfo = "Rush Captain";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4940497F973C37300A45970D /* Pods_Rush_Captain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rush_Captain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C89C2C5FADF2F309451BB07 /* Pods-Rush Captain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain.release.xcconfig"; path = "Target Support Files/Pods-Rush Captain/Pods-Rush Captain.release.xcconfig"; sourceTree = "<group>"; };
+		9405DA782385AF64009EC628 /* Rush Captain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rush Captain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405DA7B2385AF64009EC628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9405DA7F2385AF64009EC628 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9405DA822385AF64009EC628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9405DA842385AF68009EC628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9405DA872385AF68009EC628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9405DA892385AF68009EC628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9405DA8E2385AF68009EC628 /* Rush CaptainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rush CaptainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405DA922385AF68009EC628 /* Rush_CaptainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rush_CaptainUITests.swift; sourceTree = "<group>"; };
+		9405DA942385AF68009EC628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9405DA9D2385B006009EC628 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
+		9405DA9F2385B356009EC628 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		944378CE238602EB006649D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		9DC2064791A211EF1382BE56 /* Pods-Rush Captain-Rush CaptainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain-Rush CaptainUITests.release.xcconfig"; path = "Target Support Files/Pods-Rush Captain-Rush CaptainUITests/Pods-Rush Captain-Rush CaptainUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9DABF4FF296E5F8DB20F648 /* Pods-Rush Captain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain.debug.xcconfig"; path = "Target Support Files/Pods-Rush Captain/Pods-Rush Captain.debug.xcconfig"; sourceTree = "<group>"; };
+		EE45D7C942391AAB5B900ADA /* Pods_Rush_Captain_Rush_CaptainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rush_Captain_Rush_CaptainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF88D0024F6284F66AB2C41D /* Pods-Rush Captain-Rush CaptainUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain-Rush CaptainUITests.debug.xcconfig"; path = "Target Support Files/Pods-Rush Captain-Rush CaptainUITests/Pods-Rush Captain-Rush CaptainUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9405DA752385AF63009EC628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75605AB06B66C7A8A05C796 /* Pods_Rush_Captain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405DA8B2385AF68009EC628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06110809CEEB57F15546B53B /* Pods_Rush_Captain_Rush_CaptainUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		127BE261B59B1069F9C63BB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4940497F973C37300A45970D /* Pods_Rush_Captain.framework */,
+				EE45D7C942391AAB5B900ADA /* Pods_Rush_Captain_Rush_CaptainUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9405DA6F2385AF63009EC628 = {
+			isa = PBXGroup;
+			children = (
+				944378CE238602EB006649D7 /* Settings.bundle */,
+				9405DA7A2385AF64009EC628 /* Rush Captain */,
+				9405DA912385AF68009EC628 /* Rush CaptainUITests */,
+				9405DA792385AF64009EC628 /* Products */,
+				E4CCBB0FECDD5F8E04EB98AA /* Pods */,
+				127BE261B59B1069F9C63BB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9405DA792385AF64009EC628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9405DA782385AF64009EC628 /* Rush Captain.app */,
+				9405DA8E2385AF68009EC628 /* Rush CaptainUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9405DA7A2385AF64009EC628 /* Rush Captain */ = {
+			isa = PBXGroup;
+			children = (
+				9405DA7B2385AF64009EC628 /* AppDelegate.swift */,
+				9405DA9F2385B356009EC628 /* SceneDelegate.swift */,
+				9405DA7F2385AF64009EC628 /* ViewController.swift */,
+				9405DA9D2385B006009EC628 /* TimerTableViewCell.swift */,
+				9405DA812385AF64009EC628 /* Main.storyboard */,
+				9405DA842385AF68009EC628 /* Assets.xcassets */,
+				9405DA862385AF68009EC628 /* LaunchScreen.storyboard */,
+				9405DA892385AF68009EC628 /* Info.plist */,
+			);
+			path = "Rush Captain";
+			sourceTree = "<group>";
+		};
+		9405DA912385AF68009EC628 /* Rush CaptainUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9405DA922385AF68009EC628 /* Rush_CaptainUITests.swift */,
+				9405DA942385AF68009EC628 /* Info.plist */,
+			);
+			path = "Rush CaptainUITests";
+			sourceTree = "<group>";
+		};
+		E4CCBB0FECDD5F8E04EB98AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9DABF4FF296E5F8DB20F648 /* Pods-Rush Captain.debug.xcconfig */,
+				5C89C2C5FADF2F309451BB07 /* Pods-Rush Captain.release.xcconfig */,
+				FF88D0024F6284F66AB2C41D /* Pods-Rush Captain-Rush CaptainUITests.debug.xcconfig */,
+				9DC2064791A211EF1382BE56 /* Pods-Rush Captain-Rush CaptainUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9405DA772385AF63009EC628 /* Rush Captain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405DA972385AF68009EC628 /* Build configuration list for PBXNativeTarget "Rush Captain" */;
+			buildPhases = (
+				50181AA82D40A394BB47F537 /* [CP] Check Pods Manifest.lock */,
+				9405DA742385AF63009EC628 /* Sources */,
+				9405DA752385AF63009EC628 /* Frameworks */,
+				9405DA762385AF63009EC628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rush Captain";
+			productName = "Rush Captain";
+			productReference = 9405DA782385AF64009EC628 /* Rush Captain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9405DA8D2385AF68009EC628 /* Rush CaptainUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405DA9A2385AF68009EC628 /* Build configuration list for PBXNativeTarget "Rush CaptainUITests" */;
+			buildPhases = (
+				CDFB44D397CD9EB35813B996 /* [CP] Check Pods Manifest.lock */,
+				9405DA8A2385AF68009EC628 /* Sources */,
+				9405DA8B2385AF68009EC628 /* Frameworks */,
+				9405DA8C2385AF68009EC628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9405DA902385AF68009EC628 /* PBXTargetDependency */,
+			);
+			name = "Rush CaptainUITests";
+			productName = "Rush CaptainUITests";
+			productReference = 9405DA8E2385AF68009EC628 /* Rush CaptainUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9405DA702385AF63009EC628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "rybel-llc";
+				TargetAttributes = {
+					9405DA772385AF63009EC628 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					9405DA8D2385AF68009EC628 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9405DA772385AF63009EC628;
+					};
+				};
+			};
+			buildConfigurationList = 9405DA732385AF63009EC628 /* Build configuration list for PBXProject "Rush Captain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9405DA6F2385AF63009EC628;
+			productRefGroup = 9405DA792385AF64009EC628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9405DA772385AF63009EC628 /* Rush Captain */,
+				9405DA8D2385AF68009EC628 /* Rush CaptainUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9405DA762385AF63009EC628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944378CF238602EB006649D7 /* Settings.bundle in Resources */,
+				9405DA882385AF68009EC628 /* LaunchScreen.storyboard in Resources */,
+				9405DA852385AF68009EC628 /* Assets.xcassets in Resources */,
+				9405DA832385AF64009EC628 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405DA8C2385AF68009EC628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50181AA82D40A394BB47F537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rush Captain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDFB44D397CD9EB35813B996 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rush Captain-Rush CaptainUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9405DA742385AF63009EC628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405DA802385AF64009EC628 /* ViewController.swift in Sources */,
+				9405DA7C2385AF64009EC628 /* AppDelegate.swift in Sources */,
+				9405DA9E2385B006009EC628 /* TimerTableViewCell.swift in Sources */,
+				9405DAA02385B356009EC628 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405DA8A2385AF68009EC628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405DA932385AF68009EC628 /* Rush_CaptainUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9405DA902385AF68009EC628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9405DA772385AF63009EC628 /* Rush Captain */;
+			targetProxy = 9405DA8F2385AF68009EC628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9405DA812385AF64009EC628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9405DA822385AF64009EC628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9405DA862385AF68009EC628 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9405DA872385AF68009EC628 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9405DA952385AF68009EC628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9405DA962385AF68009EC628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9405DA982385AF68009EC628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DABF4FF296E5F8DB20F648 /* Pods-Rush Captain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 181121;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = "Rush Captain/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-Captain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9405DA992385AF68009EC628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C89C2C5FADF2F309451BB07 /* Pods-Rush Captain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 181121;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = "Rush Captain/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-Captain";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9405DA9B2385AF68009EC628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF88D0024F6284F66AB2C41D /* Pods-Rush Captain-Rush CaptainUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = "Rush CaptainUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-CaptainUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rush Captain";
+			};
+			name = Debug;
+		};
+		9405DA9C2385AF68009EC628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC2064791A211EF1382BE56 /* Pods-Rush Captain-Rush CaptainUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AL6H9GEC6N;
+				INFOPLIST_FILE = "Rush CaptainUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-CaptainUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rush Captain";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9405DA732385AF63009EC628 /* Build configuration list for PBXProject "Rush Captain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405DA952385AF68009EC628 /* Debug */,
+				9405DA962385AF68009EC628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9405DA972385AF68009EC628 /* Build configuration list for PBXNativeTarget "Rush Captain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405DA982385AF68009EC628 /* Debug */,
+				9405DA992385AF68009EC628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9405DA9A2385AF68009EC628 /* Build configuration list for PBXNativeTarget "Rush CaptainUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405DA9B2385AF68009EC628 /* Debug */,
+				9405DA9C2385AF68009EC628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9405DA702385AF63009EC628 /* Project object */;
+}

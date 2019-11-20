@@ -1,0 +1,6 @@
+framework module Pods_Rush_Captain_Rush_CaptainUITests {
+  umbrella header "Pods-Rush Captain-Rush CaptainUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

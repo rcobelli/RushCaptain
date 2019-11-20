@@ -1,0 +1,6 @@
+framework module Pods_Rush_Captain {
+  umbrella header "Pods-Rush Captain-umbrella.h"
+
+  export *
+  module * { export * }
+}

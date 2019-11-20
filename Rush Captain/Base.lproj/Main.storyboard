@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dXd-0Y-Gj4">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rush Captain-->
+        <scene sceneID="Tuq-b8-MdW">
+            <objects>
+                <tableViewController id="Tf6-Kv-9Mr" customClass="ViewController" customModule="Rush_Captain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vfD-Y7-IsT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timer" rowHeight="70" id="n1W-oE-EZm" customClass="TimerTableViewCell" customModule="Rush_Captain" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n1W-oE-EZm" id="Gke-wu-Itk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Brother Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSn-UG-J1h">
+                                            <rect key="frame" x="24" y="11" width="237" height="48"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydy-WA-o7o">
+                                            <rect key="frame" x="269" y="11" width="90" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="nWg-Lg-ucG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ydy-WA-o7o" firstAttribute="trailing" secondItem="Gke-wu-Itk" secondAttribute="trailingMargin" id="48S-2B-1H3"/>
+                                        <constraint firstItem="ydy-WA-o7o" firstAttribute="bottom" secondItem="Gke-wu-Itk" secondAttribute="bottomMargin" id="W1L-Rh-pTZ"/>
+                                        <constraint firstItem="WSn-UG-J1h" firstAttribute="bottom" secondItem="Gke-wu-Itk" secondAttribute="bottomMargin" id="bne-2G-pk4"/>
+                                        <constraint firstItem="WSn-UG-J1h" firstAttribute="leading" secondItem="Gke-wu-Itk" secondAttribute="leadingMargin" constant="8" id="dqH-OF-NQY"/>
+                                        <constraint firstItem="ydy-WA-o7o" firstAttribute="leading" secondItem="WSn-UG-J1h" secondAttribute="trailing" constant="8" id="pLf-r1-SkZ"/>
+                                        <constraint firstItem="ydy-WA-o7o" firstAttribute="top" secondItem="Gke-wu-Itk" secondAttribute="topMargin" id="rFK-1U-fwN"/>
+                                        <constraint firstItem="WSn-UG-J1h" firstAttribute="top" secondItem="Gke-wu-Itk" secondAttribute="topMargin" id="vOG-js-U2n"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="WSn-UG-J1h" id="sn7-4V-yVd"/>
+                                    <outlet property="timerLabel" destination="ydy-WA-o7o" id="ory-Ab-myQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tf6-Kv-9Mr" id="KMY-nI-xmN"/>
+                            <outlet property="delegate" destination="Tf6-Kv-9Mr" id="qKA-Uv-BW8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Rush Captain" id="NkE-Qe-h9z">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="7mH-ec-ceX">
+                            <connections>
+                                <action selector="setTimeWithSender:" destination="Tf6-Kv-9Mr" id="CbM-cD-4EX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b8m-vx-FrK">
+                            <connections>
+                                <action selector="increaseRowsWithSender:" destination="Tf6-Kv-9Mr" id="qGm-T8-4eJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcR-cr-JTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="82.3088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yrs-ta-mCo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dXd-0Y-Gj4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ji1-ui-EP2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tf6-Kv-9Mr" kind="relationship" relationship="rootViewController" id="Hgr-2M-Mj3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njv-lY-rF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.80000000000001" y="82.3088455772114"/>
+        </scene>
+    </scenes>
+</document>
