@@ -1,7 +1,7 @@
 # Rush Captain
 ##### App that handles automatically keeping track of multiple conversation duration during a fraternity rush setting
 
-![Screenshot](screenshot.jpeg)
+![Screenshot](screenshot.jpg)
 
 ## Installation
 You can download the app from the App Store for only $0.99 to support my development efforts. The link is _______
