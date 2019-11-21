@@ -461,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181122;
+				CURRENT_PROJECT_VERSION = 181123;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = "Rush Captain/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-Captain";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.rush-captain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181122;
+				CURRENT_PROJECT_VERSION = 181123;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = "Rush Captain/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -493,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.Rush-Captain";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.rush-captain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
