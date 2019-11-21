@@ -25,6 +25,8 @@ class ViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
         
+		tableView.accessibilityIdentifier = "mainTable"
+		
 		timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
 			for i in 0..<self.brothers.count {
 				self.brothers[i].time += 1
@@ -88,6 +90,7 @@ class ViewController: UITableViewController {
 			textField.placeholder = "Mike Hunt"
 			textField.autocapitalizationType = .words
 			textField.returnKeyType = .done
+			textField.accessibilityIdentifier = "nameInput"
 		}
 
 		alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in

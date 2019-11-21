@@ -14,7 +14,7 @@ languages([
 
 app_identifier "com.rybel-llc.rush-captain"
 
-scheme "RushCaptain"
+scheme "Rush Captain"
 
 reinstall_app true
 

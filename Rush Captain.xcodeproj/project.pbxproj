@@ -17,6 +17,8 @@
 		9405DA9E2385B006009EC628 /* TimerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA9D2385B006009EC628 /* TimerTableViewCell.swift */; };
 		9405DAA02385B356009EC628 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405DA9F2385B356009EC628 /* SceneDelegate.swift */; };
 		944378CF238602EB006649D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 944378CE238602EB006649D7 /* Settings.bundle */; };
+		94BE2BDF2386F1F80023524E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE2BDE2386F1F80023524E /* SnapshotHelper.swift */; };
+		94BE2BE12386F2AA0023524E /* rybelLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 94BE2BE02386F2AA0023524E /* rybelLogo.png */; };
 		A75605AB06B66C7A8A05C796 /* Pods_Rush_Captain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4940497F973C37300A45970D /* Pods_Rush_Captain.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		9405DA9D2385B006009EC628 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
 		9405DA9F2385B356009EC628 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		944378CE238602EB006649D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		94BE2BDE2386F1F80023524E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		94BE2BE02386F2AA0023524E /* rybelLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rybelLogo.png; sourceTree = "<group>"; };
 		9DC2064791A211EF1382BE56 /* Pods-Rush Captain-Rush CaptainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain-Rush CaptainUITests.release.xcconfig"; path = "Target Support Files/Pods-Rush Captain-Rush CaptainUITests/Pods-Rush Captain-Rush CaptainUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9DABF4FF296E5F8DB20F648 /* Pods-Rush Captain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rush Captain.debug.xcconfig"; path = "Target Support Files/Pods-Rush Captain/Pods-Rush Captain.debug.xcconfig"; sourceTree = "<group>"; };
 		EE45D7C942391AAB5B900ADA /* Pods_Rush_Captain_Rush_CaptainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rush_Captain_Rush_CaptainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,7 @@
 				9405DA812385AF64009EC628 /* Main.storyboard */,
 				9405DA842385AF68009EC628 /* Assets.xcassets */,
 				9405DA862385AF68009EC628 /* LaunchScreen.storyboard */,
+				94BE2BE02386F2AA0023524E /* rybelLogo.png */,
 				9405DA892385AF68009EC628 /* Info.plist */,
 			);
 			path = "Rush Captain";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				9405DA922385AF68009EC628 /* Rush_CaptainUITests.swift */,
+				94BE2BDE2386F1F80023524E /* SnapshotHelper.swift */,
 				9405DA942385AF68009EC628 /* Info.plist */,
 			);
 			path = "Rush CaptainUITests";
@@ -224,6 +230,7 @@
 				9405DA882385AF68009EC628 /* LaunchScreen.storyboard in Resources */,
 				9405DA852385AF68009EC628 /* Assets.xcassets in Resources */,
 				9405DA832385AF64009EC628 /* Main.storyboard in Resources */,
+				94BE2BE12386F2AA0023524E /* rybelLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9405DA932385AF68009EC628 /* Rush_CaptainUITests.swift in Sources */,
+				94BE2BDF2386F1F80023524E /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181121;
+				CURRENT_PROJECT_VERSION = 181122;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = "Rush Captain/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -466,6 +474,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -475,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181121;
+				CURRENT_PROJECT_VERSION = 181122;
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				INFOPLIST_FILE = "Rush Captain/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -488,6 +497,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -509,6 +519,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rush Captain";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -530,6 +541,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rush Captain";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
