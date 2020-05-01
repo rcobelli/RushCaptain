@@ -17,10 +17,10 @@ struct Brother {
 class ViewController: UITableViewController {
 	
 	var numRows = 0
-	var brothers : [Brother] = [Brother]()
+	var brothers: [Brother] = [Brother]()
 	var timer = Timer()
-	var selectedRow : IndexPath?
-	var editingNow : Bool = false
+	var selectedRow: IndexPath?
+	var editingNow: Bool = false
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -28,8 +28,8 @@ class ViewController: UITableViewController {
 		tableView.accessibilityIdentifier = "mainTable"
 		
 		timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { _ in
-			for i in 0..<self.brothers.count {
-				self.brothers[i].time += 1
+			for index in 0..<self.brothers.count {
+				self.brothers[index].time += 1
 			}
 			if !self.editingNow {
 				self.tableView.reloadData()
@@ -55,7 +55,9 @@ class ViewController: UITableViewController {
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "timer", for: indexPath) as! TimerTableViewCell
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: "timer", for: indexPath) as? TimerTableViewCell else {
+			return UITableViewCell()
+		}
 		
 		cell.brotherName = brothers[indexPath.row].name
 		cell.timeElapsed = brothers[indexPath.row].time
@@ -84,7 +86,9 @@ class ViewController: UITableViewController {
 	}
 	
 	@IBAction func increaseRows(sender: Any) {
-		let alert = UIAlertController(title: "Add New Brother", message: "Please enter the brothers name", preferredStyle: .alert)
+		let alert = UIAlertController(title: "Add New Brother",
+									  message: "Please enter the brothers name",
+									  preferredStyle: .alert)
 
 		alert.addTextField { (textField) in
 			textField.placeholder = "Mike Hunt"
@@ -114,7 +118,9 @@ class ViewController: UITableViewController {
 	}
 	
 	@IBAction func setTime(sender: Any) {
-		let alert = UIAlertController(title: "Set Cycle Time Goal", message: "What is the goal for cycling people off? (seconds)", preferredStyle: .alert)
+		let alert = UIAlertController(title: "Set Cycle Time Goal",
+									  message: "What is the goal for cycling people off? (seconds)",
+									  preferredStyle: .alert)
 
 		alert.addTextField { (textField) in
 			textField.placeholder = "10"
@@ -137,4 +143,3 @@ class ViewController: UITableViewController {
 	}
 
 }
-
